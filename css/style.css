@@ -17,10 +17,10 @@
   
   Primary: #e67e22
   
-  Tints:
+  Tints: #fdf2e9
   Shades: 
   Accents: 
-  Greys: #555;
+  Greys: #555; #333
 
   --05 SHADOWS
 
@@ -39,9 +39,64 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
   font-family: sans-serif;
   font-weight: 400;
   line-height: 1;
+  color: #555;
+}
+
+.hero-img {
+  width: 100%;
+}
+.section-hero {
+  background-color: #fdf2e9;
+  padding: 9.6rem 0;
+}
+.hero {
+  max-width: 130rem;
+  padding: 9.6rem 0;
+  margin: 0 auto;
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.heading-primary {
+  font-size: 5.2rem;
+  font-weight: 700;
+  line-height: 1.05;
+  color: #333;
+  letter-spacing: -0.5rem;
+  margin-bottom: 3.2rem;
+}
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.6rem;
+  margin-bottom: 4.8rem;
+}
+
+.btn:link,
+.btn:visited {
+  padding: 1.6rem 3.2rem;
+  text-decoration: none;
+  font-size: 2rem;
+  color: #fff;
+  border-radius: 1rem;
+
+  display: inline-block;
+}
+.btn--full:link,
+.btn--full:visited {
+  background-color: #e67e22;
+  color: #fff;
+}
+.btn--outline:link,
+.btn--outline:visited {
+  background-color: #fff;
   color: #555;
 }
